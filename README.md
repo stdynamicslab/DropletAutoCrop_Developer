@@ -25,15 +25,14 @@ ObjectDetection/
 │   └── annotator_gui.py
 ├── yolo_format_conversion/     # Converts annotation to YOLO format
 │   └── annotations_to_yolo.py
-├── model_testing/              # Inference using trained model
-│   └── test_yolo.py
-├── post_processing/            # Cropping predictions
-│   └── crop_detected.py
-
 ├── yolo_training/               # YOLOv8 training files
 │   ├── train_yolo.py
 │   ├── data.yaml
 │   └── labels/
+├── model_testing/              # Inference using trained model
+│   └── test_yolo.py
+├── post_processing/            # Cropping predictions
+│   └── crop_detected.py
 ├── samples/                    # Sample images
 │   ├── original_image.png
 │   ├── converted_image.png
@@ -89,7 +88,7 @@ pip install -r requirements.txt
 4. **Convert Annotations to YOLO Format**
 
    ```bash
-   python yolo_format_conversion/annotations_to_yolo.py
+   python yolo_format_conversion/annotations_to_yolo.py --input_dir path/to/annotated_images --output_dir path/to/yolo_labels
    ```
 
 5. **Train YOLOv8 Model**
