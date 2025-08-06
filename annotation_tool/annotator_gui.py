@@ -105,14 +105,18 @@ class BatchAnnotator:
             self.load_image()
 
 if __name__ == "__main__":
-    root = tk.Tk()
-    input_folder = "input folder path"
-    output_folder = "output folder path"
+    import argparse
 
-    if not os.path.exists(input_folder):
-        messagebox.showerror("Error", f"Input folder not found: {input_folder}")
-        root.destroy()
+    parser = argparse.ArgumentParser(description="Batch Rectangle Annotator")
+    parser.add_argument("--input_dir", required=True, help="Input folder path")
+    parser.add_argument("--output_dir", required=True, help="Output folder path")
+    args = parser.parse_args()
+
+    if not os.path.exists(args.input_dir):
+        messagebox.showerror("Error", f"Input folder not found: {args.input_dir}")
     else:
-        BatchAnnotator(root, input_folder, output_folder)
+        root = tk.Tk()
+        BatchAnnotator(root, args.input_dir, args.output_dir)
         root.mainloop()
+
 
