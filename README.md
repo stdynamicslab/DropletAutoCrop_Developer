@@ -15,21 +15,23 @@ This project includes:
 
 ```
 
-circle-detection-yolo/
-├── image\_conversion/           # 16/24-bit to 8-bit conversion
-│   └── convert\_to\_8bit.py
-├── annotation\_tool/            # GUI for manual annotation
-│   └── annotator\_gui.py
-├── yolo\_format\_conversion/     # Converts annotation to YOLO format
-│   └── annotations\_to\_yolo.py
-├── yolov5\_training/            # YOLOv8 training files
-│   ├── train\_yolo.py
-│   ├── data.yaml
-│   └── labels/
+//
+
+ObjectDetection/
+├── annotation_tool/            # GUI for manual annotation
+│   └── annotator_gui.py
+├── image_conversion/           # 16/24-bit to 8-bit conversion
+│   └── convert_to_8bit.py
 ├── model\_testing/              # Inference using trained model
 │   └── detect.py
 ├── post\_processing/            # Cropping predictions
 │   └── crop\_detected.py
+├── yolo_format_conversion/     # Converts annotation to YOLO format
+│   └── annotations\_to\_yolo.py
+├── yolo_training/            # YOLOv8 training files
+│   ├── train_yolo.py
+│   ├── data.yaml
+│   └── labels/
 ├── samples/                    # Sample images
 │   ├── original\_image.png
 │   ├── annotation\_view\.png
