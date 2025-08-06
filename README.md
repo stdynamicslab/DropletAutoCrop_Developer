@@ -21,22 +21,23 @@ ObjectDetection/
 ├── annotation_tool/            # GUI for manual annotation
 │   └── annotator_gui.py
 ├── image_conversion/           # 16/24-bit to 8-bit conversion
-│   └── convert_to_8bit.py
-├── model\_testing/              # Inference using trained model
-│   └── detect.py
-├── post\_processing/            # Cropping predictions
-│   └── crop\_detected.py
+│   ├── convert_16bit_to_8bit.py
+│   ├── convert_24bit_to_8bit.py
+├── model_testing/              # Inference using trained model
+│   └── test_yolo.py
+├── post_processing/            # Cropping predictions
+│   └── crop_detected.py
 ├── yolo_format_conversion/     # Converts annotation to YOLO format
-│   └── annotations\_to\_yolo.py
+│   └── annotations_to_yolo.py
 ├── yolo_training/            # YOLOv8 training files
 │   ├── train_yolo.py
 │   ├── data.yaml
 │   └── labels/
 ├── samples/                    # Sample images
-│   ├── original\_image.png
-│   ├── annotation\_view\.png
-│   ├── yolo\_output.png
-│   └── cropped\_circle.png
+│   ├── original_image.png
+│   ├── annotated_image.png
+│   ├── yolo_output.png
+│   └── cropped_image.png
 ├── requirements.txt            # Python dependencies
 └── README.md
 
