@@ -72,17 +72,17 @@ pip install -r requirements.txt
 
    A. *Convert 16-bit images to 8-bit images*
    ```bash
-   python image_conversion/convert_16bit_to_8bit.py input_folder output_folder
+   python image_conversion/convert_16bit_to_8bit.py --input_dir path/to/16bit_images --output_dir path/to/8bit_images
    ```
    B. *Convert 24-bit images to 8-bit images*
    ```bash
-   python image_conversion/convert_24bit_to_8bit.py input_folder output_folder
+   python image_conversion/convert_24bit_to_8bit.py --input_dir path/to/24bit_images --output_dir path/to/8bit_images
    ```
 
 3. **Annotate with Custom GUI**
 
    ```bash
-   python annotation_tool/annotator_gui.py --input_dir path/to/8bit_images
+   python annotation_tool/annotator_gui.py --input_dir path/to/8bit_images --output_dir path/to/annotated_images
    ```
 
 4. **Convert Annotations to YOLO Format**
