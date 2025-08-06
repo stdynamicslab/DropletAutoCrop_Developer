@@ -106,8 +106,8 @@ class BatchAnnotator:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    input_folder = r"F:\new\GUI\main_file\Bacteria\paper\annotation_content\New_folder"
-    output_folder = r"F:\new\GUI\main_file\Bacteria\paper\annotation_content\annotation"
+    input_folder = "input folder path"
+    output_folder = "output folder path"
 
     if not os.path.exists(input_folder):
         messagebox.showerror("Error", f"Input folder not found: {input_folder}")
@@ -115,3 +115,4 @@ if __name__ == "__main__":
     else:
         BatchAnnotator(root, input_folder, output_folder)
         root.mainloop()
+
