@@ -75,7 +75,12 @@ def process_folder(annotated_images_folder, labels_output_folder):
 
 
 if __name__ == "__main__":
-    annotated_folder = "anotated_images"  # folder with your annotated images
-    labels_folder = "bbox_labels"     # folder to save YOLO label txt files
+    import argparse
 
-    process_folder(annotated_folder, labels_folder)
+    parser = argparse.ArgumentParser(description="Convert red rectangles in annotated images to YOLO format")
+    parser.add_argument("--input_dir", required=True, help="Path to folder containing red-rectangle annotated images")
+    parser.add_argument("--output_dir", required=True, help="Path to save YOLO-format .txt label files")
+    args = parser.parse_args()
+
+    process_folder(args.input_dir, args.output_dir)
+
