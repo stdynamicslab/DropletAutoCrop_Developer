@@ -35,8 +35,9 @@ ObjectDetection/
 │   └── labels/
 ├── samples/                    # Sample images
 │   ├── original_image.png
+│   ├── converted_image.png
 │   ├── annotated_image.png
-│   ├── yolo_output.png
+│   ├── model_predicted.png
 │   └── cropped_image.png
 ├── requirements.txt            # Python dependencies
 └── README.md
@@ -48,8 +49,8 @@ ObjectDetection/
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/circle-detection-yolo.git
-cd circle-detection-yolo
+git clone https://github.com/stdynamicslab/ObjectDetection.git
+cd ObjectDetection
 ````
 
 Create a virtual environment (optional):
