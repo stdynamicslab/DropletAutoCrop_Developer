@@ -69,6 +69,7 @@ pip install -r requirements.txt
 ## 🔄 Pipeline Overview
 
 1. **Convert Images to 8-bit**
+
    A. *Convert 16-bit images to 8-bit images*
    ```bash
    python image_conversion/convert_16bit_to_8bit.py input_folder output_folder
@@ -78,31 +79,31 @@ pip install -r requirements.txt
    python image_conversion/convert_24bit_to_8bit.py input_folder output_folder
    ```
 
-2. **Annotate with Custom GUI**
+3. **Annotate with Custom GUI**
 
    ```bash
    python annotation_tool/annotator_gui.py --input_dir path/to/8bit_images
    ```
 
-3. **Convert Annotations to YOLO Format**
+4. **Convert Annotations to YOLO Format**
 
    ```bash
    python yolo_format_conversion/annotations_to_yolo.py
    ```
 
-4. **Train YOLOv8 Model**
+5. **Train YOLOv8 Model**
 
    ```bash
    python yolov5_training/train_yolo.py
    ```
 
-5. **Run Detection on New Images**
+6. **Run Detection on New Images**
 
    ```bash
    python model_testing/detect.py --weights path/to/best.pt --source path/to/test_images
    ```
 
-6. **Crop Detected Circles**
+7. **Crop Detected Circles**
 
    ```bash
    python post_processing/crop_detected.py --input path/to/predictions --output path/to/cropped
