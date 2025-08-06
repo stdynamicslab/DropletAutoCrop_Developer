@@ -18,18 +18,19 @@ This project includes:
 //
 
 ObjectDetection/
-├── annotation_tool/            # GUI for manual annotation
-│   └── annotator_gui.py
 ├── image_conversion/           # 16/24-bit to 8-bit conversion
 │   ├── convert_16bit_to_8bit.py
 │   ├── convert_24bit_to_8bit.py
+├── annotation_tool/            # GUI for manual annotation
+│   └── annotator_gui.py
+├── yolo_format_conversion/     # Converts annotation to YOLO format
+│   └── annotations_to_yolo.py
 ├── model_testing/              # Inference using trained model
 │   └── test_yolo.py
 ├── post_processing/            # Cropping predictions
 │   └── crop_detected.py
-├── yolo_format_conversion/     # Converts annotation to YOLO format
-│   └── annotations_to_yolo.py
-├── yolo_training/            # YOLOv8 training files
+
+├── yolo_training/               # YOLOv8 training files
 │   ├── train_yolo.py
 │   ├── data.yaml
 │   └── labels/
