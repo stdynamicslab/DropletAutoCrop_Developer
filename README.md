@@ -68,10 +68,14 @@ pip install -r requirements.txt
 
 ## 🔄 Pipeline Overview
 
-1. **Convert Images**
-
+1. **Convert Images to 8-bit**
+A. *Convert 16-bit images to 8-bit images*
    ```bash
-   python image_conversion/convert_to_8bit.py --input_dir path/to/raw_images --output_dir path/to/8bit_images
+   python image_conversion/convert_16bit_to_8bit.py input_folder output_folder
+   ```
+B. *Convert 24-bit images to 8-bit images*
+   ```bash
+   python image_conversion/convert_24bit_to_8bit.py input_folder output_folder
    ```
 
 2. **Annotate with Custom GUI**
