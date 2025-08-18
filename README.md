@@ -14,9 +14,6 @@ This project includes:
 ## 📁 Project Structure
 
 ```
-
-//
-
 ObjectDetection/
 ├── image_conversion/           # 16/24-bit to 8-bit conversion
 │   ├── convert_16bit_to_8bit.py
