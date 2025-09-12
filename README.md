@@ -1,17 +1,17 @@
 # Circular Pattern Detection Using YOLOv8
 
-A complete pipeline to detect and extract circular patterns from raw grayscale images using custom annotations and YOLOv8.
+A complete pipeline to detect and extract circular patterns from raw images using YOLOv8.
 
-## 🔍 Features
+## Features
 
 This project includes:
-- Image bit-depth conversion (16/24-bit ➜ 8-bit)
+- Image bit-depth conversion (16/24-bit to 8-bit)
 - Custom GUI annotation tool
 - Conversion to YOLO format
-- Training a YOLOv8 model on circular patterns
-- Cropping and saving detected circular regions
+- Training a YOLOv8 model on circular patterns of the images
+- Cropping and saving the images with only detected circular regions
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ObjectDetection/
@@ -41,7 +41,7 @@ ObjectDetection/
 
 ````
 
-## ⚙️ Installation
+## Installation
 
 Clone the repository:
 
@@ -63,11 +63,11 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-## 🔄 Pipeline Overview
+## Pipeline Overview
 
-1. **Convert Images to 8-bit**
+1. Convert Images to 8-bit
 
-   A. *Convert 16-bit images to 8-bit images*
+   A. Convert 16-bit images to 8-bit images
    ```bash
    python image_conversion/convert_16bit_to_8bit.py --input_dir path/to/16bit_images --output_dir path/to/8bit_images
    ```
