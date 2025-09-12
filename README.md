@@ -65,9 +65,9 @@ pip install -r requirements.txt
 
 ## Pipeline Overview
 
-1. Convert Images to 8-bit
+1. **Convert Images to 8-bit**
 
-   A. Convert 16-bit images to 8-bit images
+   A. *Convert 16-bit images to 8-bit images*
    ```bash
    python image_conversion/convert_16bit_to_8bit.py --input_dir path/to/16bit_images --output_dir path/to/8bit_images
    ```
@@ -106,7 +106,7 @@ pip install -r requirements.txt
    python post_processing/crop_detected.py --input path/to/predictions --output path/to/cropped
    ```
 
-## 🖼️ Sample Output
+## Sample Output
 
 Sample output images can be found in the `samples/` folder.
 
