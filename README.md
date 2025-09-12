@@ -112,7 +112,7 @@ Sample output images can be found in the `samples/` folder.
 
 
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 * [Ultralytics](https://github.com/ultralytics) for the YOLOv8 model
 
