@@ -46,8 +46,8 @@ ObjectDetection/
 Clone the repository:
 
 ```bash
-git clone https://github.com/stdynamicslab/ObjectDetection.git
-cd ObjectDetection
+git clone https://github.com/stdynamicslab/DropletAutoCrop_developer.git
+cd DropletAutoCrop_developer
 ````
 
 Create a virtual environment (optional):
